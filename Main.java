@@ -7,10 +7,24 @@ public class Main{
                 Scanner sc = new Scanner(System.in);
 
                 //入力
+                System.out.println("入力された3個の数字を左の数値が大きい順にソートします。");
+                System.out.println("左から1個目の数字が同じであれば左から2個目を基準にソート");
+                System.out.println("左から2個目の数字が同じであれば左から3個目を基準にソート");
+                System.out.println("左から3個目も同じとき、つまり同じ数字のときは並びます");
+                System.out.println("");
+                System.out.println("以下の例に従って入力してください");
+                System.out.println("入力する行数を入力してください: 2");
+                System.out.println("100 200 300");
+                System.out.println("7 10 300");
+                System.out.println("----------------------");
+
+                System.out.print("入力する行数を入力してください: ");
                 int count=sc.nextInt();
                 int i=0;
                 int j=0;
                 int array[][] = new int[count][3];
+
+
                 for(i=0;i<count;i++){
 
                         for(j=0;j<3;j++){
@@ -113,7 +127,10 @@ public class Main{
                 }
 
                 //確認出力
-                System.out.println("----------------------");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("result");
                 for(s=0;s<count;s++){
 
                         for(t=0;t<3;t++){
